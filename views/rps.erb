@@ -1,0 +1,35 @@
+
+<h1>We played <%= @choice %>!</h1>
+
+<% roll = rand(3)%>
+
+<% if roll == 0 && @choice == "rock"%>
+  <h1>They played rock!</h1>
+  <h1>We tied!</h1>
+<% elsif roll == 0 && @choice == "paper"%>
+  <h1>They played rock!</h1>
+  <h1>We won!</h1>
+<% elsif roll == 0 && @choice == "scissors"%>
+  <h1>They played rock!</h1>
+  <h1>We lost!</h1>
+<% elsif roll == 1 && @choice == "rock"%>
+  <h1>They played paper!</h1>
+  <h1>We lost!</h1>
+<% elsif roll == 1 && @choice == "paper"%>
+  <h1>They played paper!</h1>
+  <h1>We tied!</h1>
+<% elsif roll == 1 && @choice == "scissors"%>
+  <h1>They played paper!</h1>
+  <h1>We won!</h1>
+<% elsif roll == 2 && @choice == "rock"%>
+  <h1>They played scissors!</h1>
+  <h1>We won!</h1>
+<% elsif roll == 2 && @choice == "paper"%>
+  <h1>They played scissors!</h1>
+  <h1>We lost!</h1>
+<% elsif roll == 2 && @choice == "scissors"%>
+  <h1>They played scissors!</h1>
+  <h1>We tied!</h1>
+<% end %>
+
+<div><a href="/">Rules</a></div>
